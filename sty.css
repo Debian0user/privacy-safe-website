@@ -579,14 +579,16 @@ hr{
 	color: white;
 	padding: .5rem 3rem .5rem 3rem;
 }
-.p4-pics{
-	width: 90%;
-	height: 545px;
-	border-style: solid;
-	border-radius: 5px;
-	border-color: whitesmoke;
-	background-image: url("screenshot.png");
-	object-fit: cover;
+.p4-pics {
+    width: 90%;
+    height: 545px;
+    border: solid whitesmoke; /* Shorthand for border properties */
+    border-radius: 5px;
+    background-image: url("screenshot.png");
+    background-size: 100% 100%; /* Force stretch to fill container */
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box; /* Include border in width/height calculations */
 }
 
 /*********************************new section*************************************************************/
