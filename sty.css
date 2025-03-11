@@ -49,15 +49,15 @@ section {
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: top; /* Align the image to the top */
     background-attachment: fixed;
-    position: sticky;
-    top: 0;
 }
 
 .page-new5{
 	position: sticky;
 	top: 0;
 }
-
+.page6{
+	background-color: black;
+}
 
 /**************************************PAGE 1********************************************/
 .banner{
@@ -479,6 +479,27 @@ hr{
 	background-image: url("receiver.png");
 	background-size: cover;
 	background-position: center;
+}
+
+.button4{
+	display: inline-flex;
+	text-decoration: none;
+	padding: 12px 30px;
+	color: white;
+	background-color: rgba(255,255,255,0.2);
+	border:2px solid white;
+	border-radius: 25px;
+	border-color: white;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	backdrop-filter: blur(5px); 
+}
+
+.button4:hover{
+	background-color: rgba(255,255,255,0.2);
+	transition: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 /****************************************PAGE 4******************************************/
 /****************************************PAGE 3******************************************/
@@ -912,3 +933,54 @@ hr{
 
     .stat-item:last-child {
       border-bottom: none;
+}
+
+
+  /****************************************************************************************************************************/
+
+  .about-us{
+  	display: flex;
+  	flex-direction: column;
+  	font-family: "Oxanium", sans-serif;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+  .cu{
+  	 display: flex;
+  	flex-direction: row;
+  	justify-content: center;
+  	align-items: center;
+  	gap:30px;
+  	padding: 20px;
+  }
+
+  .container-users{
+  	 display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	border-style: solid;
+  	border-radius: 10px;
+  	padding: 25px;
+  	align-items: center;
+  }
+
+  .user-img{
+  	border-radius: 50%;
+  }
+
+  .des6{
+  	padding: 20px;
+  }
+
+  .user-img{
+  	width: 160px;
+  	height: 160px;
+  	border-radius: 50%;
+  	border-style: solid;
+  	background-color: white;
+  	padding: 20px;
+  }
+.container-user hr{
+	padding: 10px;
+}
