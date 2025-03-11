@@ -973,12 +973,34 @@ hr{
   	padding: 20px;
   }
 
-  .user-img{
-  	width: 160px;
-  	height: 160px;
+  .user-img1{
+  	width: 120px;
+  	height: 120px;
   	border-radius: 50%;
   	border-style: solid;
   	background-color: white;
+  	padding: 20px;
+	background-image: url("https://avatars.githubusercontent.com/u/147071039?v=4");
+	object-fit: cover;
+  }
+
+  .user-img2{
+  	width: 120px;
+  	height: 120px;
+  	border-radius: 50%;
+  	border-style: solid;
+  	ackground-image: url("https://avatars.githubusercontent.com/u/170030589?v=4");
+	object-fit: cover;
+  	padding: 20px;
+  }
+
+  .user-img3{
+  	width: 120px;
+  	height: 120px;
+  	border-radius: 50%;
+  	border-style: solid;
+  	background-image: url("https://avatars.githubusercontent.com/u/167017833?v=4");
+	object-fit: cover;
   	padding: 20px;
   }
 .container-user hr{
