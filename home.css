@@ -1,3 +1,18 @@
+
+    :root {
+      --background: #191C22;
+      --container: #24272D;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --secondary: #6b7280;
+      --text: #ffffff;
+      --text-secondary: #a1a1aa;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --border: #374151;
+    }
+
 *{
 	margin :0;
 	padding: 0;
@@ -8,6 +23,7 @@ html{
 }
 body{
 	overflow-y:scroll ;
+	color: var(--text);
 	overflow-x:scroll ;
 }
 body::-webkit-scrollbar { /* WebKit */
@@ -35,6 +51,11 @@ section {
     background-attachment: fixed;
     position: sticky;
     top: 0;
+}
+
+.page-new5{
+	position: sticky;
+	top: 0;
 }
 
 
@@ -546,3 +567,348 @@ hr{
 	background-image: url("screenshot.png");
 	object-fit: cover;
 }
+
+/*********************************new section*************************************************************/
+
+.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width :100%;
+      padding: 20px;
+      font-family: "Oxanium", sans-serif;
+      background-color: #191C22;
+    }
+    
+    .app-section {
+      background-color: var(--container);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      width: 90%;
+      padding: 30px;
+      margin: 2rem 0;
+      font-family: "Oxanium", sans-serif;
+    }
+    
+    .custom-button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: start;
+      padding: 0.75rem 1.25rem;
+      overflow: hidden;
+      font-weight: bold;
+      border-radius: 9999px;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      text-align: left;
+    }
+    
+    .custom-button .bg-effect-1 {
+      width: 8rem;
+      height: 8rem;
+      transform: rotate(45deg) translate(3rem, -0.5rem);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: white;
+      opacity: 0.03;
+    }
+    
+    .custom-button .bg-effect-2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12rem;
+      height: 12rem;
+      margin-top: -0.25rem;
+      transition: all 0.5s ease-in-out;
+      transform: rotate(45deg) translate(-14rem, -6rem);
+      background-color: white;
+      opacity: 1;
+    }
+    
+    .custom-button:hover .bg-effect-2 {
+      transform: rotate(45deg) translate(-2rem, -6rem);
+    }
+    
+    .custom-button .button-text {
+      position: relative;
+      width: 100%;
+      text-align: left;
+      color: white;
+      transition: color 0.2s ease-in-out;
+      z-index: 10;
+    }
+    
+    .custom-button:hover .button-text {
+      color: #1a1a1a;
+    }
+    
+    .custom-button .button-border {
+      position: absolute;
+      inset: 0;
+      border: 2px solid white;
+      border-radius: 9999px;
+    }
+    
+    .file-browser {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      background-color: var(--container);
+    }
+
+    .file-browser-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 8px 8px 0 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .file-list {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .file-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .file-item:last-child {
+      border-bottom: none;
+    }
+
+    .file-item:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .file-name {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .file-icon {
+      width: 20px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+
+    .file-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn-sm {
+      padding: 0.25rem 0.5rem;
+      font-size: 12px;
+      margin-top: 0;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-weight: bold;
+      border-radius: 9999px;
+      cursor: pointer;
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .btn-sm:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-success {
+      border-color: var(--success);
+      color: var(--success);
+    }
+
+    .btn-success:hover {
+      background-color: rgba(16, 185, 129, 0.1);
+    }
+
+    .btn-danger {
+      border-color: var(--danger);
+      color: var(--danger);
+    }
+
+    .btn-danger:hover {
+      background-color: rgba(239, 68, 68, 0.1);
+    }
+
+    .upload-section {
+      border: 2px dashed var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      transition: border-color 0.2s, background-color 0.2s;
+    }
+
+    .upload-section:hover {
+      border-color: var(--primary);
+      background-color: rgba(37, 99, 235, 0.1);
+    }
+
+    .upload-section p {
+      margin-bottom: 0.5rem;
+    }
+
+    .status-bar {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+
+    .peer-count {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-indicator {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--success);
+    }
+
+    .bandwidth-meter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .progress-bar {
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: 0.5rem;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background-color: var(--primary);
+      width: 35%;
+    }
+
+    .network-visualization {
+      height: 200px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    .about-section {
+      background-color: var(--container);
+      color: var(--text);
+      border-radius: 8px;
+      margin-top: 2rem;
+      width: 90%;
+      padding: 40px;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .feature-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+    
+    .feature-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .feature-icon {
+      width: 24px;
+      height: 24px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .tab-buttons {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+    
+    .tab-button {
+      background: none;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      color: var(--text-secondary);
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 0;
+    }
+    
+    .tab-button.active {
+      color: var(--text);
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+
+    input[type="text"] {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    input[type="text"]::placeholder {
+      color: var(--text-secondary);
+    }
+
+    .stat-item {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stat-item:last-child {
+      border-bottom: none;
