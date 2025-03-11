@@ -334,14 +334,14 @@
 			<div class="box1 bg1"></div> <!--use nth child for changingthe background -->
 			<div class="p3-box">
 				<p class="p3right">
-					When you open the app, it fetches a list of users or contacts. You choose the contact, and the app initiates the process to establish a secure connection. The selection triggers a query to locate the recipient's active session or their cryptographic identifiers, like public keys.
+					When you open the app, you should establish a secure connection. So firstly generate a private key and securely send it to the other user. This Private key is sent to the other person publicaly via a third party medium. But we tried using the Elliptic curve Diffie Hellman alg. to send the a key to the other person.
 				</p>
 			</div>
 		</div>
 		<div class="p3subcontainer">
 			<div class="p3-box">
 				<p class="p3left">
-					[DUMMY] Once the secure P2P channel is established, the sender encrypts each message using the recipient's public key. The encrypted message is transmitted through the P2P connection. The app ensures message integrity and delivery by using acknowledgments or resending data in case of failures.
+					Upon receiving it, they derive an answer key and send it back. I then verify the answer key against expected cryptographic parameters. If it matches, the connection is successfully established, enabling encrypted communication. This process ensures security, preventing unauthorized access and maintaining data integrity.
 				</p>
 			</div>
 			<div class="box2 bg2"></div>
