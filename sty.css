@@ -581,12 +581,17 @@ hr{
 }
 .p4-pics {
     border: solid whitesmoke; /* Shorthand for border properties */
-    border-radius: 5px;
-    background-image: url("screenshot.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box; /* Include border in width/height calculations */
+	width: 90%;
+	height: 545px;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: whitesmoke;
+	background-image: url("screenshot.png");
+	object-fit: cover;
 }
 
 /*********************************new section*************************************************************/
