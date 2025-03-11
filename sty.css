@@ -961,7 +961,8 @@ hr{
   }
 
   .container-users{
-  	 display: flex;
+  	display: flex;
+	transition: ease-in .4s;
   	flex-direction: column;
   	justify-content: center;
   	border-style: solid;
@@ -997,7 +998,7 @@ hr{
   	border-style: solid;
 	background-size: cover;
 	background-position: center;
-  	ackground-image: url("https://avatars.githubusercontent.com/u/51111727?s=200&v=4");
+  	background-image: url("https://avatars.githubusercontent.com/u/170030589?v=4");
 	object-fit: cover;
   	padding: 20px;
   }
@@ -1013,6 +1014,11 @@ hr{
 	object-fit: cover;
   	padding: 20px;
   }
-.container-user hr{
-	padding: 10px;
+
+.container-user:hover{
+	transform: translateY(10px);
+	transition: ease-out .4s;
+	background-color: white;
+	color: black;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.1) 0px 30px 60px -30px;
 }
