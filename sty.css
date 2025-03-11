@@ -1015,7 +1015,7 @@ hr{
   	padding: 20px;
   }
 
-.container-user:hover{
+.container-users:hover{
 	transform: translateY(10px);
 	transition: ease-out .4s;
 	background-color: white;
