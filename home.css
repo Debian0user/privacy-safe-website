@@ -543,6 +543,6 @@ hr{
 	border-style: solid;
 	border-radius: 5px;
 	border-color: whitesmoke;
-	background-image: url("p4img.png");
-	object-fit: fill;
+	background-image: url("screenshot.png");
+	object-fit: cover;
 }
