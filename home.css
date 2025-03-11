@@ -561,13 +561,13 @@ hr{
 .p4-pics {
     width: 90%;
     height: 545px;
-    border-style: solid;
+    border: solid whitesmoke; /* Shorthand for border properties */
     border-radius: 5px;
-    border-color: whitesmoke;
     background-image: url("screenshot.png");
-    background-size: cover; /* Scales image to fill container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
+    background-size: 100% 100%; /* Force stretch to fill container */
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box; /* Include border in width/height calculations */
 }
 
 /*********************************new section*************************************************************/
