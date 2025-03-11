@@ -580,12 +580,10 @@ hr{
 	padding: .5rem 3rem .5rem 3rem;
 }
 .p4-pics {
-    width: 90%;
-    height: 545px;
     border: solid whitesmoke; /* Shorthand for border properties */
     border-radius: 5px;
     background-image: url("screenshot.png");
-    background-size: 100% 100%; /* Force stretch to fill container */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-sizing: border-box; /* Include border in width/height calculations */
@@ -980,7 +978,8 @@ hr{
   	height: 120px;
   	border-radius: 50%;
   	border-style: solid;
-  	background-color: white;
+	background-size: cover;
+	background-position: center;
   	padding: 20px;
 	background-image: url("https://avatars.githubusercontent.com/u/147071039?v=4");
 	object-fit: cover;
@@ -991,6 +990,8 @@ hr{
   	height: 120px;
   	border-radius: 50%;
   	border-style: solid;
+	background-size: cover;
+	background-position: center;
   	ackground-image: url("https://avatars.githubusercontent.com/u/170030589?v=4");
 	object-fit: cover;
   	padding: 20px;
@@ -1001,6 +1002,8 @@ hr{
   	height: 120px;
   	border-radius: 50%;
   	border-style: solid;
+	background-size: cover;
+	background-position: center;
   	background-image: url("https://avatars.githubusercontent.com/u/167017833?v=4");
 	object-fit: cover;
   	padding: 20px;
