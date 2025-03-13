@@ -1022,3 +1022,174 @@ hr{
 	color: black;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.1) 0px 30px 60px -30px;
 }
+/* ========== MOBILE RESPONSIVE ADJUSTMENTS ========== */
+@media (max-width: 768px) {
+  /* Base Mobile Fixes */
+  body {
+    overflow-x: hidden !important;
+  }
+  
+  /* Sticky Section Fix */
+  .page1, .page2, .page3, .page-new5 {
+    position: relative !important;
+    top: auto !important;
+  }
+
+  /* Navigation */
+  .navdiv {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem !important;
+  }
+  
+  .logo a {
+    font-size: 1.5rem !important;
+    padding-left: 0 !important;
+  }
+  
+  li {
+    display: block !important;
+    margin: 0.5rem 0 !important;
+  }
+
+  /* Hero Section */
+  .banner {
+    height: auto;
+    min-height: 100vh;
+    background-attachment: scroll !important;
+  }
+
+  .home-content {
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 1rem;
+  }
+
+  .home-content .yp, 
+  .home-content .yr {
+    font-size: 2.5rem !important;
+    -webkit-text-stroke: 0.5px !important;
+  }
+
+  .glass {
+    width: 95% !important;
+    padding: 1rem !important;
+  }
+
+  /* Page 2 */
+  .container2 {
+    flex-direction: column;
+    height: auto !important;
+  }
+
+  .video-p2, 
+  .content-p2 {
+    width: 100% !important;
+    height: 50vh !important;
+  }
+
+  .p2-answer {
+    position: relative !important;
+    padding: 2rem !important;
+    font-size: 1rem !important;
+  }
+
+  /* Page 3 */
+  .p3subcontainer {
+    flex-direction: column;
+    gap: 2rem !important;
+  }
+
+  .box1, .box2 {
+    width: 90% !important;
+    height: 200px !important;
+    margin: 0 auto;
+  }
+
+  .p3heading {
+    padding: 1rem !important;
+    flex-wrap: wrap;
+  }
+
+  /* Page 4 */
+  .p4-pics {
+    height: 300px !important;
+  }
+
+  .p4-subheading {
+    font-size: 1.5rem !important;
+    padding: 1rem !important;
+  }
+
+  /* About Section */
+  .cu {
+    flex-direction: column;
+  }
+
+  .container-users {
+    width: 90% !important;
+  }
+
+  /* General Components */
+  .app-section, .about-section {
+    width: 95% !important;
+    padding: 1.5rem !important;
+  }
+}
+
+/* ========== MOBILE-FIRST ENHANCEMENTS ========== */
+/* Base Mobile Styles */
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Typography */
+.home-content .yp,
+.home-content .yr,
+.p2h1,
+.p2hollow {
+  font-size: clamp(2rem, 8vw, 4rem) !important;
+}
+
+.p2-answer p,
+.p4-text {
+  font-size: clamp(1rem, 4vw, 1.25rem) !important;
+}
+
+/* Touch Optimization */
+button, .home-btn, .custom-button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Performance Optimization */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Landscape Orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .banner {
+    min-height: 150vh;
+  }
+  
+  .home-content {
+    top: 40%;
+  }
+}
+
+/* 2K+ Screens */
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+}
